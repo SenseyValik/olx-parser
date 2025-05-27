@@ -117,7 +117,7 @@ class UpdatePrices extends Command
         }
         
         // Check if price changed
-        if ($cachedPrice !== $currentPrice || true) {
+        if ($cachedPrice !== $currentPrice) {
             $this->warn("Price changed! Old: {$cachedPrice} → New: {$currentPrice}");
             
             // Update cache
